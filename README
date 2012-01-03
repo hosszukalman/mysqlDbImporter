@@ -1,0 +1,12 @@
+== INSTALL ==
+
+1) Clone the repo into your computer.
+2) Copy the source where you want (most of cases you'll need  more copy of the code).
+3) Open the downloaded "dbimporter" file in your favorite text editor.
+4) Add "user", "pass" and "db" variables' values.
+
+== USAGE ==
+$ ./dbimporter pathToSqlDumpFile.sql
+
+== WARNING ==
+Maybe you have to add execute permission to the downloaded shell script (chmod ug+x dbimporter).
