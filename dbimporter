@@ -12,6 +12,7 @@ echo "All tables dropped!";
 if [ $# -eq 1 ]
   then
   echo "Start importing...";
+  mysql -u$user -p$pass $db < $1;
 fi
 
 exit 0;
