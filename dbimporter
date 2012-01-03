@@ -1,5 +1,10 @@
 #! /bin/bash
 
+# Init variables
+user="";
+pass="";
+db="";
+
 echo "Drop all tables...";
 
 exit 0;
