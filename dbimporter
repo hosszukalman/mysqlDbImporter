@@ -4,15 +4,16 @@
 user="";
 pass="";
 db="";
+host="localhost";
 
 echo "Drop all tables...";
-mysqldump -u$user -p$pass --add-drop-table --no-data $db | grep ^DROP | mysql -u$user -p$pass $db;
+mysqldump -h$host -u$user -p$pass --add-drop-table --no-data $db | grep ^DROP | mysql -h$host -u$user -p$pass $db;
 echo "All tables dropped!";
 
 if [ $# -eq 1 ]
   then
   echo "Start importing...";
-  mysql -u$user -p$pass $db < $1;
+  mysql -h$host -u$user -p$pass $db < $1;
   echo "Import finished!";
 fi
 

@@ -3,7 +3,7 @@
 1) Clone the repo into your computer.
 2) Copy the source where you want (most of cases you'll need  more copy of the code).
 3) Open the downloaded "dbimporter" file in your favorite text editor.
-4) Add "user", "pass" and "db" variables' values.
+4) Add "user", "pass" "db" and "host" variables' values.
 
 == USAGE ==
 $ ./dbimporter pathToSqlDumpFile.sql
