@@ -6,5 +6,6 @@ pass="";
 db="";
 
 echo "Drop all tables...";
-
+mysqldump -u$user -p$pass --add-drop-table --no-data $db | grep ^DROP | mysql -u$user -p$pass $db;
+echo "All tables dropped!";
 exit 0;
