@@ -1,1 +1,5 @@
 #! /bin/bash
+
+echo "Drop all tables...";
+
+exit 0;
