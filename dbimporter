@@ -12,6 +12,15 @@ echo "All tables dropped!";
 
 if [ $# -eq 1 ]
   then
+
+  importFile=$(basename $1 .gz);
+  if [ $importFile != $1 ]
+    then
+    echo "Unzipping file...";
+    gunzip $1;
+    echo "The file is unzipped.";
+  fi
+
   echo "Start importing...";
   mysql -h$host -u$user -p$pass $db < $1;
   echo "Import finished!";
