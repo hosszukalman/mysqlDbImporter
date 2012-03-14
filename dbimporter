@@ -22,7 +22,7 @@ if [ $# -eq 1 ]
   fi
 
   echo "Start importing...";
-  mysql -h$host -u$user -p$pass $db < $1;
+  mysql -h$host -u$user -p$pass $db < $importFile;
   echo "Import finished!";
 fi
 
